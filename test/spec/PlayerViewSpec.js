@@ -35,6 +35,7 @@ describe('PlayerView', function() {
     it('dequeues a song when finished playing & plays the next song', function(){
       var firstSong = library.at(0)
         , secondSong = library.at(1)
+        console.log(secondSong);
         , thirdSong = library.at(2)
         , songQueue = appView.model.get('songQueue');
       // Set up a queue of three songs
