@@ -14,14 +14,6 @@ var SongQueue = Songs.extend({
       }
     },this);
 
-    this.on('ended', function(){
-      this.remove(this.at(0));
-    }, this);
-
-    // this.on('dequeue', function(){
-    //   this.remove(this);
-    // },this);
-
   },
 
   playFirst: function() {
