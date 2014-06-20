@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    </head>
   <body>
     <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
      below them until after the scripts load-->
@@ -31,8 +35,11 @@
         // build a view for the top level of the whole app
         var appView = new AppView({model: app});
         // put the view onto the screen
-        $('body').append(appView.render());
+        $('.container').append(appView.render());
       });
     </script>
+    <div class="container">
+    </div>
+
   </body>
 </html>
